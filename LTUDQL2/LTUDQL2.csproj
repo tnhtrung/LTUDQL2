@@ -41,10 +41,6 @@
     <Reference Include="DevExpress.Sparkline.v15.2.Core" />
     <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.2" />
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -63,28 +59,76 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frm_BanHang.cs">
+    <Compile Include="GUI\ChucNang\frm_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frm_BanHang.Designer.cs">
+    <Compile Include="GUI\ChucNang\frm_BanHang.Designer.cs">
       <DependentUpon>frm_BanHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frm_KhachHang.cs">
+    <Compile Include="GUI\HeThong\frm_DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frm_KhachHang.Designer.cs">
-      <DependentUpon>frm_KhachHang.cs</DependentUpon>
+    <Compile Include="GUI\HeThong\frm_DoiMatKhau.Designer.cs">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frm_MuaHang.cs">
+    <Compile Include="GUI\HeThong\frm_KetChuyen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frm_MuaHang.Designer.cs">
+    <Compile Include="GUI\HeThong\frm_KetChuyen.Designer.cs">
+      <DependentUpon>frm_KetChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_ThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_ThemKhachHang.Designer.cs">
+      <DependentUpon>frm_ThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_MuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_MuaHang.Designer.cs">
       <DependentUpon>frm_MuaHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frm_TonKho.cs">
+    <Compile Include="GUI\HeThong\frm_NhatKyHeThong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frm_TonKho.Designer.cs">
+    <Compile Include="GUI\HeThong\frm_NhatKyHeThong.Designer.cs">
+      <DependentUpon>frm_NhatKyHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_PhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_PhanQuyen.Designer.cs">
+      <DependentUpon>frm_PhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_PhucHoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_PhucHoi.Designer.cs">
+      <DependentUpon>frm_PhucHoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_SaoLuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_SaoLuu.Designer.cs">
+      <DependentUpon>frm_SaoLuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_SuaChua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_SuaChua.Designer.cs">
+      <DependentUpon>frm_SuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_ThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HeThong\frm_ThongTin.Designer.cs">
+      <DependentUpon>frm_ThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_TonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_TonKho.Designer.cs">
       <DependentUpon>frm_TonKho.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -92,17 +136,32 @@
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_BanHang.resx">
+    <EmbeddedResource Include="GUI\ChucNang\frm_BanHang.resx">
       <DependentUpon>frm_BanHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_KhachHang.resx">
-      <DependentUpon>frm_KhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ChucNang\frm_ThemKhachHang.resx">
+      <DependentUpon>frm_ThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_MuaHang.resx">
+    <EmbeddedResource Include="GUI\ChucNang\frm_MuaHang.resx">
       <DependentUpon>frm_MuaHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_TonKho.resx">
+    <EmbeddedResource Include="GUI\ChucNang\frm_TonKho.resx">
       <DependentUpon>frm_TonKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HeThong\frm_DoiMatKhau.resx">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HeThong\frm_NhatKyHeThong.resx">
+      <DependentUpon>frm_NhatKyHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HeThong\frm_PhucHoi.resx">
+      <DependentUpon>frm_PhucHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HeThong\frm_SaoLuu.resx">
+      <DependentUpon>frm_SaoLuu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HeThong\frm_ThongTin.resx">
+      <DependentUpon>frm_ThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -126,15 +185,23 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GUI\DanhMuc\" />
+    <Folder Include="GUI\TroGiup\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="GUI\Resources\1.png" />
     <Content Include="GUI\Resources\10.png" />
     <Content Include="GUI\Resources\11.png" />
     <Content Include="GUI\Resources\12.png" />
+    <Content Include="GUI\Resources\13.png" />
     <Content Include="GUI\Resources\14.png" />
+    <Content Include="GUI\Resources\15.png" />
     <Content Include="GUI\Resources\16.png" />
+    <Content Include="GUI\Resources\17.png" />
+    <Content Include="GUI\Resources\19.png" />
     <Content Include="GUI\Resources\2.png" />
+    <Content Include="GUI\Resources\20.png" />
     <Content Include="GUI\Resources\3.png" />
     <Content Include="GUI\Resources\4.png" />
     <Content Include="GUI\Resources\41.png" />

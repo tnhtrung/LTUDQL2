@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Main));
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation6 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation2 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -134,7 +134,7 @@
             this.barButtonItem36,
             this.barButtonItem37});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 24;
+            this.ribbon.MaxItemId = 28;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage3,
@@ -148,7 +148,9 @@
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "Mua Hàng";
+            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
             this.barButtonItem1.Id = 1;
+            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
@@ -157,7 +159,9 @@
             // barButtonItem2
             // 
             this.barButtonItem2.Caption = "Bán Hàng";
+            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
             this.barButtonItem2.Id = 2;
+            this.barButtonItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.LargeGlyph")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
@@ -366,6 +370,7 @@
             // 
             this.barButtonItem25.Caption = "Đơn Vị Tính";
             this.barButtonItem25.Id = 25;
+            this.barButtonItem25.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.LargeGlyph")));
             this.barButtonItem25.Name = "barButtonItem25";
             this.barButtonItem25.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
@@ -373,7 +378,9 @@
             // barButtonItem26
             // 
             this.barButtonItem26.Caption = "Nhóm Hàng";
+            this.barButtonItem26.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.Glyph")));
             this.barButtonItem26.Id = 26;
+            this.barButtonItem26.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.LargeGlyph")));
             this.barButtonItem26.Name = "barButtonItem26";
             this.barButtonItem26.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
@@ -389,7 +396,9 @@
             // barButtonItem28
             // 
             this.barButtonItem28.Caption = "In Mã Vạch";
+            this.barButtonItem28.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.Glyph")));
             this.barButtonItem28.Id = 28;
+            this.barButtonItem28.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.LargeGlyph")));
             this.barButtonItem28.Name = "barButtonItem28";
             this.barButtonItem28.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
@@ -398,18 +407,23 @@
             // 
             this.barButtonItem29.Caption = "Tỷ Giá";
             this.barButtonItem29.Id = 29;
+            this.barButtonItem29.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.LargeGlyph")));
             this.barButtonItem29.Name = "barButtonItem29";
             // 
             // barButtonItem30
             // 
             this.barButtonItem30.Caption = "Bộ Phận ";
+            this.barButtonItem30.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem30.Glyph")));
             this.barButtonItem30.Id = 30;
+            this.barButtonItem30.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem30.LargeGlyph")));
             this.barButtonItem30.Name = "barButtonItem30";
             // 
             // barButtonItem31
             // 
             this.barButtonItem31.Caption = "Nhân Viên";
+            this.barButtonItem31.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem31.Glyph")));
             this.barButtonItem31.Id = 31;
+            this.barButtonItem31.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem31.LargeGlyph")));
             this.barButtonItem31.Name = "barButtonItem31";
             // 
             // barButtonItem32
@@ -468,12 +482,12 @@
             this.ribbonPageGroup9,
             this.ribbonPageGroup10});
             this.ribbonPage3.Name = "ribbonPage3";
-            reduceOperation6.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation6.Group = null;
-            reduceOperation6.ItemLinkIndex = 0;
-            reduceOperation6.ItemLinksCount = 0;
-            reduceOperation6.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            this.ribbonPage3.ReduceOperations.Add(reduceOperation6);
+            reduceOperation2.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation2.Group = null;
+            reduceOperation2.ItemLinkIndex = 0;
+            reduceOperation2.ItemLinksCount = 0;
+            reduceOperation2.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            this.ribbonPage3.ReduceOperations.Add(reduceOperation2);
             this.ribbonPage3.Text = "Hệ Thống";
             // 
             // ribbonPageGroup8
