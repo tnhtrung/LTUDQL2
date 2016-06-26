@@ -24,5 +24,25 @@ namespace LTUDQL2
             bh.Show();
 
         }
+
+        private void gridLookUpEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gcBH_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
