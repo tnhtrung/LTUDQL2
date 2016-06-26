@@ -37,6 +37,20 @@
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.grd_chuyenkho = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.cl_ma = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_hanghoa = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_donvi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_soluong = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_dongia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.txt_phieu = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.cb_nguoinhan = new System.Windows.Forms.ComboBox();
             this.cb_nguoichuyen = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,20 +68,6 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_phieu = new System.Windows.Forms.TextBox();
-            this.date = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.grd_chuyenkho = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.cl_ma = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_hanghoa = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_donvi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_soluong = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_dongia = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.document1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
@@ -75,11 +75,11 @@
             this.dockPanel1_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_chuyenkho)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grd_chuyenkho)).BeginInit();
             this.SuspendLayout();
             // 
             // documentGroup1
@@ -157,6 +157,121 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(727, 281);
             this.groupControl1.TabIndex = 2;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(0, 144);
+            this.gridControl1.MainView = this.grd_chuyenkho;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(727, 80);
+            this.gridControl1.TabIndex = 14;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.grd_chuyenkho});
+            // 
+            // grd_chuyenkho
+            // 
+            this.grd_chuyenkho.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.cl_ma,
+            this.cl_hanghoa,
+            this.cl_donvi,
+            this.cl_soluong,
+            this.cl_dongia,
+            this.cl_thanhtien});
+            this.grd_chuyenkho.GridControl = this.gridControl1;
+            this.grd_chuyenkho.Name = "grd_chuyenkho";
+            this.grd_chuyenkho.OptionsView.ShowGroupPanel = false;
+            // 
+            // cl_ma
+            // 
+            this.cl_ma.FieldName = "Mã";
+            this.cl_ma.Name = "cl_ma";
+            this.cl_ma.Visible = true;
+            this.cl_ma.VisibleIndex = 0;
+            // 
+            // cl_hanghoa
+            // 
+            this.cl_hanghoa.FieldName = "Hàng hóa";
+            this.cl_hanghoa.Name = "cl_hanghoa";
+            this.cl_hanghoa.Visible = true;
+            this.cl_hanghoa.VisibleIndex = 1;
+            // 
+            // cl_donvi
+            // 
+            this.cl_donvi.FieldName = "Đơn vị";
+            this.cl_donvi.Name = "cl_donvi";
+            this.cl_donvi.Visible = true;
+            this.cl_donvi.VisibleIndex = 2;
+            // 
+            // cl_soluong
+            // 
+            this.cl_soluong.FieldName = "Số lượng";
+            this.cl_soluong.Name = "cl_soluong";
+            this.cl_soluong.Visible = true;
+            this.cl_soluong.VisibleIndex = 3;
+            // 
+            // cl_dongia
+            // 
+            this.cl_dongia.FieldName = "Đơn giá";
+            this.cl_dongia.Name = "cl_dongia";
+            this.cl_dongia.Visible = true;
+            this.cl_dongia.VisibleIndex = 4;
+            // 
+            // cl_thanhtien
+            // 
+            this.cl_thanhtien.FieldName = "Thành tiền";
+            this.cl_thanhtien.Name = "cl_thanhtien";
+            this.cl_thanhtien.Visible = true;
+            this.cl_thanhtien.VisibleIndex = 5;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(83, 100);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(639, 21);
+            this.textBox1.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Ghi chú";
+            // 
+            // date
+            // 
+            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date.Location = new System.Drawing.Point(573, 60);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(149, 21);
+            this.date.TabIndex = 11;
+            this.date.Value = new System.DateTime(2016, 6, 26, 15, 3, 3, 0);
+            // 
+            // txt_phieu
+            // 
+            this.txt_phieu.Location = new System.Drawing.Point(573, 28);
+            this.txt_phieu.Name = "txt_phieu";
+            this.txt_phieu.Size = new System.Drawing.Size(149, 21);
+            this.txt_phieu.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(514, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Ngày";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(514, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Phiếu CK";
             // 
             // cb_nguoinhan
             // 
@@ -297,128 +412,13 @@
             this.tabbedView1.RootContainer.Nodes.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer[] {
             dockingContainer1});
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(514, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Phiếu CK";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(514, 68);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Ngày";
-            // 
-            // txt_phieu
-            // 
-            this.txt_phieu.Location = new System.Drawing.Point(573, 28);
-            this.txt_phieu.Name = "txt_phieu";
-            this.txt_phieu.Size = new System.Drawing.Size(149, 21);
-            this.txt_phieu.TabIndex = 10;
-            // 
-            // date
-            // 
-            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date.Location = new System.Drawing.Point(573, 60);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(149, 21);
-            this.date.TabIndex = 11;
-            this.date.Value = new System.DateTime(2016, 6, 26, 15, 3, 3, 0);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 108);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Ghi chú";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(83, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(639, 21);
-            this.textBox1.TabIndex = 13;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(0, 144);
-            this.gridControl1.MainView = this.grd_chuyenkho;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(727, 80);
-            this.gridControl1.TabIndex = 14;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.grd_chuyenkho});
-            // 
-            // grd_chuyenkho
-            // 
-            this.grd_chuyenkho.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.cl_ma,
-            this.cl_hanghoa,
-            this.cl_donvi,
-            this.cl_soluong,
-            this.cl_dongia,
-            this.cl_thanhtien});
-            this.grd_chuyenkho.GridControl = this.gridControl1;
-            this.grd_chuyenkho.Name = "grd_chuyenkho";
-            this.grd_chuyenkho.OptionsView.ShowGroupPanel = false;
-            // 
-            // cl_ma
-            // 
-            this.cl_ma.FieldName = "Mã";
-            this.cl_ma.Name = "cl_ma";
-            this.cl_ma.Visible = true;
-            this.cl_ma.VisibleIndex = 0;
-            // 
-            // cl_hanghoa
-            // 
-            this.cl_hanghoa.FieldName = "Hàng hóa";
-            this.cl_hanghoa.Name = "cl_hanghoa";
-            this.cl_hanghoa.Visible = true;
-            this.cl_hanghoa.VisibleIndex = 1;
-            // 
-            // cl_donvi
-            // 
-            this.cl_donvi.FieldName = "Đơn vị";
-            this.cl_donvi.Name = "cl_donvi";
-            this.cl_donvi.Visible = true;
-            this.cl_donvi.VisibleIndex = 2;
-            // 
-            // cl_soluong
-            // 
-            this.cl_soluong.FieldName = "Số lượng";
-            this.cl_soluong.Name = "cl_soluong";
-            this.cl_soluong.Visible = true;
-            this.cl_soluong.VisibleIndex = 3;
-            // 
-            // cl_dongia
-            // 
-            this.cl_dongia.FieldName = "Đơn giá";
-            this.cl_dongia.Name = "cl_dongia";
-            this.cl_dongia.Visible = true;
-            this.cl_dongia.VisibleIndex = 4;
-            // 
-            // cl_thanhtien
-            // 
-            this.cl_thanhtien.FieldName = "Thành tiền";
-            this.cl_thanhtien.Name = "cl_thanhtien";
-            this.cl_thanhtien.Visible = true;
-            this.cl_thanhtien.VisibleIndex = 5;
-            // 
             // frm_ChuyenKhoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 334);
             this.Name = "frm_ChuyenKhoa";
-            this.Text = "frm_ChuyenKhoa";
+            this.Text = "Chuyển Kho";
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.document1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
@@ -428,12 +428,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_chuyenkho)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grd_chuyenkho)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -556,7 +556,7 @@
             this.ClientSize = new System.Drawing.Size(1171, 451);
             this.Controls.Add(this.comboBoxEdit5);
             this.Name = "frm_BanHang";
-            this.Text = "frm_BanHang";
+            this.Text = "Bán Hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.document2)).EndInit();

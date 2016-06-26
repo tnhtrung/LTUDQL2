@@ -282,7 +282,7 @@ namespace LTUDQL2.GUI.DanhMuc
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 261);
             this.Name = "frm_NhaCungCapDM";
-            this.Text = "frm_NhaCungCapDM";
+            this.Text = "Nhà cung cấp";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.document2)).EndInit();
