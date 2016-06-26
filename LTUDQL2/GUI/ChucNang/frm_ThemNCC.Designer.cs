@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ThemNCC));
             this.s = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -61,8 +63,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.s)).BeginInit();
             this.s.SuspendLayout();
             this.SuspendLayout();
@@ -108,6 +108,24 @@
             this.s.Size = new System.Drawing.Size(561, 395);
             this.s.TabIndex = 3;
             this.s.Text = "Thông tin khách hàng";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(444, 351);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(75, 32);
+            this.simpleButton2.TabIndex = 40;
+            this.simpleButton2.Text = "Đóng";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(324, 351);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(73, 32);
+            this.simpleButton1.TabIndex = 39;
+            this.simpleButton1.Text = "Lưu";
             // 
             // comboBox1
             // 
@@ -360,24 +378,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã(*)";
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(324, 351);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(73, 32);
-            this.simpleButton1.TabIndex = 39;
-            this.simpleButton1.Text = "Lưu";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(444, 351);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(75, 32);
-            this.simpleButton2.TabIndex = 40;
-            this.simpleButton2.Text = "Đóng";
-            // 
             // frm_ThemNCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,7 +385,7 @@
             this.ClientSize = new System.Drawing.Size(561, 395);
             this.Controls.Add(this.s);
             this.Name = "frm_ThemNCC";
-            this.Text = "frm_ThemNCC";
+            this.Text = "Thêm nhà cung cấp";
             ((System.ComponentModel.ISupportInitialize)(this.s)).EndInit();
             this.s.ResumeLayout(false);
             this.s.PerformLayout();
