@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LTUDQL2.GUI
+namespace LTUDQL2.GUI.ChucNang
 {
-    public partial class frm_KetChuyen : Form
+    public partial class frm_ThuTien : Form
     {
-        public frm_KetChuyen()
+        public frm_ThuTien()
         {
             InitializeComponent();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
