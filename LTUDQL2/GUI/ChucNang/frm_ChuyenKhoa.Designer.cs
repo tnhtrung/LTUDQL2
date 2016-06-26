@@ -29,15 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer dockingContainer1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ChuyenKhoa));
+            DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer dockingContainer1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer();
+            this.documentGroup1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup(this.components);
+            this.document1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(this.components);
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
-            this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
-            this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.document1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(this.components);
-            this.documentGroup1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup(this.components);
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cb_nguoinhan = new System.Windows.Forms.ComboBox();
+            this.cb_nguoichuyen = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cb_khonhan = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cb_khohang = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -45,26 +52,50 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
+            this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_phieu = new System.Windows.Forms.TextBox();
+            this.date = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.grd_chuyenkho = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.cl_ma = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_hanghoa = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_donvi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_soluong = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_dongia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_thanhtien = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.document1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.document1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_chuyenkho)).BeginInit();
             this.SuspendLayout();
+            // 
+            // documentGroup1
+            // 
+            this.documentGroup1.Items.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.Document[] {
+            this.document1});
+            // 
+            // document1
+            // 
+            this.document1.Caption = "Chuyển kho";
+            this.document1.ControlName = "dockPanel1";
+            this.document1.FloatLocation = new System.Drawing.Point(0, 0);
+            this.document1.FloatSize = new System.Drawing.Size(200, 200);
+            this.document1.Properties.AllowClose = DevExpress.Utils.DefaultBoolean.True;
+            this.document1.Properties.AllowFloat = DevExpress.Utils.DefaultBoolean.True;
+            this.document1.Properties.AllowFloatOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
             // 
             // dockManager1
             // 
@@ -83,23 +114,6 @@
             "DevExpress.XtraBars.Navigation.TileNavPane",
             "DevExpress.XtraBars.TabFormControl"});
             // 
-            // documentManager1
-            // 
-            this.documentManager1.ContainerControl = this;
-            this.documentManager1.View = this.tabbedView1;
-            this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
-            this.tabbedView1});
-            // 
-            // tabbedView1
-            // 
-            this.tabbedView1.DocumentGroups.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup[] {
-            this.documentGroup1});
-            this.tabbedView1.Documents.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseDocument[] {
-            this.document1});
-            dockingContainer1.Element = this.documentGroup1;
-            this.tabbedView1.RootContainer.Nodes.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer[] {
-            dockingContainer1});
-            // 
             // dockPanel1
             // 
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
@@ -109,7 +123,7 @@
             this.dockPanel1.Location = new System.Drawing.Point(0, 0);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(727, 233);
+            this.dockPanel1.Size = new System.Drawing.Size(727, 306);
             this.dockPanel1.Text = "Chuyển kho";
             // 
             // dockPanel1_Container
@@ -118,23 +132,99 @@
             this.dockPanel1_Container.Controls.Add(this.toolStrip1);
             this.dockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(727, 233);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(727, 306);
             this.dockPanel1_Container.TabIndex = 0;
             // 
-            // document1
+            // groupControl1
             // 
-            this.document1.Caption = "Chuyển kho";
-            this.document1.ControlName = "dockPanel1";
-            this.document1.FloatLocation = new System.Drawing.Point(0, 0);
-            this.document1.FloatSize = new System.Drawing.Size(200, 200);
-            this.document1.Properties.AllowClose = DevExpress.Utils.DefaultBoolean.True;
-            this.document1.Properties.AllowFloat = DevExpress.Utils.DefaultBoolean.True;
-            this.document1.Properties.AllowFloatOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
+            this.groupControl1.Controls.Add(this.gridControl1);
+            this.groupControl1.Controls.Add(this.textBox1);
+            this.groupControl1.Controls.Add(this.label7);
+            this.groupControl1.Controls.Add(this.date);
+            this.groupControl1.Controls.Add(this.txt_phieu);
+            this.groupControl1.Controls.Add(this.label6);
+            this.groupControl1.Controls.Add(this.label5);
+            this.groupControl1.Controls.Add(this.cb_nguoinhan);
+            this.groupControl1.Controls.Add(this.cb_nguoichuyen);
+            this.groupControl1.Controls.Add(this.label4);
+            this.groupControl1.Controls.Add(this.label3);
+            this.groupControl1.Controls.Add(this.cb_khonhan);
+            this.groupControl1.Controls.Add(this.label2);
+            this.groupControl1.Controls.Add(this.cb_khohang);
+            this.groupControl1.Controls.Add(this.label1);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(0, 25);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(727, 281);
+            this.groupControl1.TabIndex = 2;
             // 
-            // documentGroup1
+            // cb_nguoinhan
             // 
-            this.documentGroup1.Items.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.Document[] {
-            this.document1});
+            this.cb_nguoinhan.FormattingEnabled = true;
+            this.cb_nguoinhan.Location = new System.Drawing.Point(327, 65);
+            this.cb_nguoinhan.Name = "cb_nguoinhan";
+            this.cb_nguoinhan.Size = new System.Drawing.Size(148, 21);
+            this.cb_nguoinhan.TabIndex = 7;
+            // 
+            // cb_nguoichuyen
+            // 
+            this.cb_nguoichuyen.FormattingEnabled = true;
+            this.cb_nguoichuyen.Location = new System.Drawing.Point(327, 28);
+            this.cb_nguoichuyen.Name = "cb_nguoichuyen";
+            this.cb_nguoichuyen.Size = new System.Drawing.Size(148, 21);
+            this.cb_nguoichuyen.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(248, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Người nhận";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(248, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Người chuyển";
+            // 
+            // cb_khonhan
+            // 
+            this.cb_khonhan.FormattingEnabled = true;
+            this.cb_khonhan.Location = new System.Drawing.Point(83, 67);
+            this.cb_khonhan.Name = "cb_khonhan";
+            this.cb_khonhan.Size = new System.Drawing.Size(148, 21);
+            this.cb_khonhan.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Kho nhận hàng";
+            // 
+            // cb_khohang
+            // 
+            this.cb_khohang.FormattingEnabled = true;
+            this.cb_khohang.Location = new System.Drawing.Point(83, 28);
+            this.cb_khohang.Name = "cb_khohang";
+            this.cb_khohang.Size = new System.Drawing.Size(148, 21);
+            this.cb_khohang.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Kho hàng";
             // 
             // toolStrip1
             // 
@@ -190,110 +280,160 @@
             this.toolStripButton5.Size = new System.Drawing.Size(56, 22);
             this.toolStripButton5.Text = "Đóng";
             // 
-            // groupControl1
+            // documentManager1
             // 
-            this.groupControl1.Controls.Add(this.comboBox4);
-            this.groupControl1.Controls.Add(this.comboBox3);
-            this.groupControl1.Controls.Add(this.label4);
-            this.groupControl1.Controls.Add(this.label3);
-            this.groupControl1.Controls.Add(this.comboBox2);
-            this.groupControl1.Controls.Add(this.label2);
-            this.groupControl1.Controls.Add(this.comboBox1);
-            this.groupControl1.Controls.Add(this.label1);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(0, 25);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(727, 208);
-            this.groupControl1.TabIndex = 2;
+            this.documentManager1.ContainerControl = this;
+            this.documentManager1.View = this.tabbedView1;
+            this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
+            this.tabbedView1});
             // 
-            // label1
+            // tabbedView1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kho hàng";
+            this.tabbedView1.DocumentGroups.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup[] {
+            this.documentGroup1});
+            this.tabbedView1.Documents.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseDocument[] {
+            this.document1});
+            dockingContainer1.Element = this.documentGroup1;
+            this.tabbedView1.RootContainer.Nodes.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer[] {
+            dockingContainer1});
             // 
-            // comboBox1
+            // label5
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(83, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 21);
-            this.comboBox1.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(514, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Phiếu CK";
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Kho nhận hàng";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(514, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Ngày";
             // 
-            // comboBox2
+            // txt_phieu
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(83, 67);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(148, 21);
-            this.comboBox2.TabIndex = 3;
+            this.txt_phieu.Location = new System.Drawing.Point(573, 28);
+            this.txt_phieu.Name = "txt_phieu";
+            this.txt_phieu.Size = new System.Drawing.Size(149, 21);
+            this.txt_phieu.TabIndex = 10;
             // 
-            // label3
+            // date
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(248, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Người chuyển";
+            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date.Location = new System.Drawing.Point(573, 60);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(149, 21);
+            this.date.TabIndex = 11;
+            this.date.Value = new System.DateTime(2016, 6, 26, 15, 3, 3, 0);
             // 
-            // label4
+            // label7
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(248, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Người nhận";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Ghi chú";
             // 
-            // comboBox3
+            // textBox1
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(363, 23);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(148, 21);
-            this.comboBox3.TabIndex = 6;
+            this.textBox1.Location = new System.Drawing.Point(83, 100);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(639, 21);
+            this.textBox1.TabIndex = 13;
             // 
-            // comboBox4
+            // gridControl1
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(363, 67);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(148, 21);
-            this.comboBox4.TabIndex = 7;
+            this.gridControl1.Location = new System.Drawing.Point(0, 144);
+            this.gridControl1.MainView = this.grd_chuyenkho;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(727, 80);
+            this.gridControl1.TabIndex = 14;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.grd_chuyenkho});
+            // 
+            // grd_chuyenkho
+            // 
+            this.grd_chuyenkho.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.cl_ma,
+            this.cl_hanghoa,
+            this.cl_donvi,
+            this.cl_soluong,
+            this.cl_dongia,
+            this.cl_thanhtien});
+            this.grd_chuyenkho.GridControl = this.gridControl1;
+            this.grd_chuyenkho.Name = "grd_chuyenkho";
+            this.grd_chuyenkho.OptionsView.ShowGroupPanel = false;
+            // 
+            // cl_ma
+            // 
+            this.cl_ma.FieldName = "Mã";
+            this.cl_ma.Name = "cl_ma";
+            this.cl_ma.Visible = true;
+            this.cl_ma.VisibleIndex = 0;
+            // 
+            // cl_hanghoa
+            // 
+            this.cl_hanghoa.FieldName = "Hàng hóa";
+            this.cl_hanghoa.Name = "cl_hanghoa";
+            this.cl_hanghoa.Visible = true;
+            this.cl_hanghoa.VisibleIndex = 1;
+            // 
+            // cl_donvi
+            // 
+            this.cl_donvi.FieldName = "Đơn vị";
+            this.cl_donvi.Name = "cl_donvi";
+            this.cl_donvi.Visible = true;
+            this.cl_donvi.VisibleIndex = 2;
+            // 
+            // cl_soluong
+            // 
+            this.cl_soluong.FieldName = "Số lượng";
+            this.cl_soluong.Name = "cl_soluong";
+            this.cl_soluong.Visible = true;
+            this.cl_soluong.VisibleIndex = 3;
+            // 
+            // cl_dongia
+            // 
+            this.cl_dongia.FieldName = "Đơn giá";
+            this.cl_dongia.Name = "cl_dongia";
+            this.cl_dongia.Visible = true;
+            this.cl_dongia.VisibleIndex = 4;
+            // 
+            // cl_thanhtien
+            // 
+            this.cl_thanhtien.FieldName = "Thành tiền";
+            this.cl_thanhtien.Name = "cl_thanhtien";
+            this.cl_thanhtien.Visible = true;
+            this.cl_thanhtien.VisibleIndex = 5;
             // 
             // frm_ChuyenKhoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(733, 261);
+            this.ClientSize = new System.Drawing.Size(733, 334);
             this.Name = "frm_ChuyenKhoa";
             this.Text = "frm_ChuyenKhoa";
+            ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.document1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
             this.dockPanel1.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);
             this.dockPanel1_Container.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.document1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_chuyenkho)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,13 +448,13 @@
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup documentGroup1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.Document document1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cb_nguoinhan;
+        private System.Windows.Forms.ComboBox cb_nguoichuyen;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cb_khonhan;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_khohang;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
@@ -323,5 +463,19 @@
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.TextBox txt_phieu;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker date;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView grd_chuyenkho;
+        private DevExpress.XtraGrid.Columns.GridColumn cl_ma;
+        private DevExpress.XtraGrid.Columns.GridColumn cl_hanghoa;
+        private DevExpress.XtraGrid.Columns.GridColumn cl_donvi;
+        private DevExpress.XtraGrid.Columns.GridColumn cl_soluong;
+        private DevExpress.XtraGrid.Columns.GridColumn cl_dongia;
+        private DevExpress.XtraGrid.Columns.GridColumn cl_thanhtien;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

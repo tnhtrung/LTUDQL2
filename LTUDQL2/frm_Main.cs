@@ -26,9 +26,7 @@ namespace LTUDQL2
 
         private void ribbon_Click(object sender, EventArgs e)
         {
-            frm_KhachHangDM f = new frm_KhachHangDM();
-            f.MdiParent = this;
-            f.Show();
+            
         }
 
         private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
