@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LTUDQL2.GUI
+namespace LTUDQL2.GUI.HeThong
 {
-    public partial class frm_SuaChua : Form
+    public partial class frm_Saoluu : Form
     {
-        public frm_SuaChua()
+        public frm_Saoluu()
         {
             InitializeComponent();
+        }
+
+        private void progressBarControl1_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

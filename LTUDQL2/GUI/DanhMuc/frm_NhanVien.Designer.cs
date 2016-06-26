@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace LTUDQL2.GUI.DanhMuc
+﻿namespace LTUDQL2.GUI.DanhMuc
 {
-    partial class frm_NhaCungCapDM
+    partial class frm_NhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -31,10 +29,10 @@ namespace LTUDQL2.GUI.DanhMuc
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_NhaCungCapDM));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_NhanVien));
             DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer dockingContainer1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer();
             this.documentGroup1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup(this.components);
-            this.document2 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(this.components);
+            this.document1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(this.components);
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
@@ -46,7 +44,6 @@ namespace LTUDQL2.GUI.DanhMuc
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btn_them = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -55,9 +52,8 @@ namespace LTUDQL2.GUI.DanhMuc
             this.btn_xoa = new System.Windows.Forms.ToolStripButton();
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
-            this.document1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.Document(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.document2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.document1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
@@ -66,23 +62,22 @@ namespace LTUDQL2.GUI.DanhMuc
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.document1)).BeginInit();
             this.SuspendLayout();
             // 
             // documentGroup1
             // 
             this.documentGroup1.Items.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.Document[] {
-            this.document2});
+            this.document1});
             // 
-            // document2
+            // document1
             // 
-            this.document2.Caption = "Nhà cung cấp";
-            this.document2.ControlName = "dockPanel1";
-            this.document2.FloatLocation = new System.Drawing.Point(249, 153);
-            this.document2.FloatSize = new System.Drawing.Size(200, 200);
-            this.document2.Properties.AllowClose = DevExpress.Utils.DefaultBoolean.True;
-            this.document2.Properties.AllowFloat = DevExpress.Utils.DefaultBoolean.True;
-            this.document2.Properties.AllowFloatOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
+            this.document1.Caption = "Nhân viên";
+            this.document1.ControlName = "dockPanel1";
+            this.document1.FloatLocation = new System.Drawing.Point(0, 0);
+            this.document1.FloatSize = new System.Drawing.Size(200, 200);
+            this.document1.Properties.AllowClose = DevExpress.Utils.DefaultBoolean.True;
+            this.document1.Properties.AllowFloat = DevExpress.Utils.DefaultBoolean.True;
+            this.document1.Properties.AllowFloatOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
             // 
             // dockManager1
             // 
@@ -106,16 +101,12 @@ namespace LTUDQL2.GUI.DanhMuc
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Float;
             this.dockPanel1.DockedAsTabbedDocument = true;
-            this.dockPanel1.FloatLocation = new System.Drawing.Point(249, 153);
-            this.dockPanel1.FloatVertical = true;
-            this.dockPanel1.ID = new System.Guid("380447a6-bbbb-4eb3-b232-3947fe968e74");
+            this.dockPanel1.ID = new System.Guid("8bfe7f3e-752b-4ec3-8968-64e8c38bf0bb");
             this.dockPanel1.Location = new System.Drawing.Point(0, 0);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanel1.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Top;
-            this.dockPanel1.SavedIndex = 0;
-            this.dockPanel1.Size = new System.Drawing.Size(659, 233);
-            this.dockPanel1.Text = "Nhà cung cấp";
+            this.dockPanel1.Size = new System.Drawing.Size(744, 233);
+            this.dockPanel1.Text = "Nhân viên";
             // 
             // dockPanel1_Container
             // 
@@ -123,7 +114,7 @@ namespace LTUDQL2.GUI.DanhMuc
             this.dockPanel1_Container.Controls.Add(this.toolStrip1);
             this.dockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(659, 233);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(744, 233);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // gridControl1
@@ -132,11 +123,10 @@ namespace LTUDQL2.GUI.DanhMuc
             this.gridControl1.Location = new System.Drawing.Point(0, 25);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(659, 208);
-            this.gridControl1.TabIndex = 3;
+            this.gridControl1.Size = new System.Drawing.Size(744, 208);
+            this.gridControl1.TabIndex = 8;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -146,60 +136,58 @@ namespace LTUDQL2.GUI.DanhMuc
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
+            this.gridColumn6});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 
-            this.gridColumn1.FieldName = "Mã ";
+            this.gridColumn1.FieldName = "Mã";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 74;
             // 
             // gridColumn2
             // 
-            this.gridColumn2.FieldName = "Tên cung cấp";
+            this.gridColumn2.FieldName = "Tên";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 130;
             // 
             // gridColumn3
             // 
-            this.gridColumn3.FieldName = "Người liên hệ";
+            this.gridColumn3.FieldName = "Địa chỉ";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.Width = 164;
             // 
             // gridColumn4
             // 
-            this.gridColumn4.FieldName = "Số điện thoại";
+            this.gridColumn4.FieldName = "Điện thoại";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.Width = 118;
             // 
             // gridColumn5
             // 
-            this.gridColumn5.FieldName = "Địa chỉ";
+            this.gridColumn5.FieldName = "Email";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.Width = 118;
             // 
             // gridColumn6
             // 
-            this.gridColumn6.FieldName = "Fax";
+            this.gridColumn6.FieldName = "Còn quản lí";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.FieldName = "Ngân hàng";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
+            this.gridColumn6.Width = 122;
             // 
             // toolStrip1
             // 
@@ -211,8 +199,8 @@ namespace LTUDQL2.GUI.DanhMuc
             this.btn_xoa});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(659, 25);
-            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Size = new System.Drawing.Size(744, 25);
+            this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btn_them
@@ -261,31 +249,21 @@ namespace LTUDQL2.GUI.DanhMuc
             this.tabbedView1.DocumentGroups.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup[] {
             this.documentGroup1});
             this.tabbedView1.Documents.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseDocument[] {
-            this.document2});
+            this.document1});
             dockingContainer1.Element = this.documentGroup1;
             this.tabbedView1.RootContainer.Nodes.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer[] {
             dockingContainer1});
             // 
-            // document1
-            // 
-            this.document1.Caption = "Nhà cung cấp";
-            this.document1.ControlName = "dockPanel1";
-            this.document1.FloatLocation = new System.Drawing.Point(256, 178);
-            this.document1.FloatSize = new System.Drawing.Size(649, 200);
-            this.document1.Properties.AllowClose = DevExpress.Utils.DefaultBoolean.True;
-            this.document1.Properties.AllowFloat = DevExpress.Utils.DefaultBoolean.True;
-            this.document1.Properties.AllowFloatOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
-            // 
-            // frm_NhaCungCapDM
+            // frm_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 261);
-            this.Name = "frm_NhaCungCapDM";
-            this.Text = "frm_NhaCungCapDM";
+            this.ClientSize = new System.Drawing.Size(750, 261);
+            this.Name = "frm_NhanVien";
+            this.Text = "frm_NhanVien";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.document2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.document1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.dockPanel1.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);
@@ -296,14 +274,8 @@ namespace LTUDQL2.GUI.DanhMuc
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.document1)).EndInit();
             this.ResumeLayout(false);
 
-        }
-
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         #endregion
@@ -313,13 +285,8 @@ namespace LTUDQL2.GUI.DanhMuc
         private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
         private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
+        private DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup documentGroup1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.Document document1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btn_them;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btn_sua;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton btn_xoa;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
@@ -328,8 +295,11 @@ namespace LTUDQL2.GUI.DanhMuc
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup documentGroup1;
-        private DevExpress.XtraBars.Docking2010.Views.Tabbed.Document document2;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton btn_them;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton btn_sua;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton btn_xoa;
     }
 }
