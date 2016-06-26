@@ -30,11 +30,11 @@ namespace Model
         public virtual DbSet<HoaDon> HoaDon { get; set; }
         public virtual DbSet<KhachHang> KhachHang { get; set; }
         public virtual DbSet<KhoHang> KhoHang { get; set; }
+        public virtual DbSet<KhuVuc> KhuVuc { get; set; }
         public virtual DbSet<LoaiSP> LoaiSP { get; set; }
         public virtual DbSet<NhaCungCap> NhaCungCap { get; set; }
         public virtual DbSet<NhanVien> NhanVien { get; set; }
         public virtual DbSet<SanPham> SanPham { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TaiKhoan> TaiKhoan { get; set; }
     }
 }

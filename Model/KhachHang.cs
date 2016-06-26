@@ -36,13 +36,14 @@ namespace Model
         public string Fax { get; set; }
         public string Website { get; set; }
         public string TenNganHang { get; set; }
-        public string KhuVuc { get; set; }
         public string NickYahoo { get; set; }
         public string NickSky { get; set; }
+        public string KhuVuc { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CongNo> CongNo { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon> HoaDon { get; set; }
+        public virtual KhuVuc KhuVuc1 { get; set; }
     }
 }
