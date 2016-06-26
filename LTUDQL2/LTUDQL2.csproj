@@ -37,10 +37,15 @@
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v15.2" />
     <Reference Include="DevExpress.Data.v15.2" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v15.2" />
     <Reference Include="DevExpress.Sparkline.v15.2.Core" />
     <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.2" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,6 +69,30 @@
     </Compile>
     <Compile Include="GUI\ChucNang\frm_BanHang.Designer.cs">
       <DependentUpon>frm_BanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_ChuyenKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_ChuyenKhoa.Designer.cs">
+      <DependentUpon>frm_ChuyenKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_ThemNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChucNang\frm_ThemNCC.Designer.cs">
+      <DependentUpon>frm_ThemNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DanhMuc\frm_HangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhMuc\frm_HangHoa.Designer.cs">
+      <DependentUpon>frm_HangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DanhMuc\frm_KhachHangDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhMuc\frm_KhachHangDM.Designer.cs">
+      <DependentUpon>frm_KhachHangDM.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\HeThong\frm_DoiMatKhau.cs">
       <SubType>Form</SubType>
@@ -89,29 +118,11 @@
     <Compile Include="GUI\ChucNang\frm_MuaHang.Designer.cs">
       <DependentUpon>frm_MuaHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\HeThong\frm_NhatKyHeThong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\HeThong\frm_NhatKyHeThong.Designer.cs">
-      <DependentUpon>frm_NhatKyHeThong.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\HeThong\frm_PhanQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\HeThong\frm_PhanQuyen.Designer.cs">
       <DependentUpon>frm_PhanQuyen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\HeThong\frm_PhucHoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\HeThong\frm_PhucHoi.Designer.cs">
-      <DependentUpon>frm_PhucHoi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\HeThong\frm_SaoLuu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\HeThong\frm_SaoLuu.Designer.cs">
-      <DependentUpon>frm_SaoLuu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\HeThong\frm_SuaChua.cs">
       <SubType>Form</SubType>
@@ -139,26 +150,35 @@
     <EmbeddedResource Include="GUI\ChucNang\frm_BanHang.resx">
       <DependentUpon>frm_BanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChucNang\frm_ChuyenKhoa.resx">
+      <DependentUpon>frm_ChuyenKhoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChucNang\frm_ThemKhachHang.resx">
       <DependentUpon>frm_ThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChucNang\frm_MuaHang.resx">
       <DependentUpon>frm_MuaHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChucNang\frm_ThemNCC.resx">
+      <DependentUpon>frm_ThemNCC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChucNang\frm_TonKho.resx">
       <DependentUpon>frm_TonKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DanhMuc\frm_HangHoa.resx">
+      <DependentUpon>frm_HangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DanhMuc\frm_KhachHangDM.resx">
+      <DependentUpon>frm_KhachHangDM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HeThong\frm_DoiMatKhau.resx">
       <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HeThong\frm_NhatKyHeThong.resx">
-      <DependentUpon>frm_NhatKyHeThong.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\HeThong\frm_PhanQuyen.resx">
+      <DependentUpon>frm_PhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HeThong\frm_PhucHoi.resx">
-      <DependentUpon>frm_PhucHoi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HeThong\frm_SaoLuu.resx">
-      <DependentUpon>frm_SaoLuu.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\HeThong\frm_SuaChua.resx">
+      <DependentUpon>frm_SuaChua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HeThong\frm_ThongTin.resx">
       <DependentUpon>frm_ThongTin.cs</DependentUpon>
@@ -186,7 +206,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GUI\DanhMuc\" />
     <Folder Include="GUI\TroGiup\" />
   </ItemGroup>
   <ItemGroup>

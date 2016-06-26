@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LTUDQL2.GUI
+namespace LTUDQL2.GUI.ChucNang
 {
-    public partial class frm_NhatKyHeThong : Form
+    public partial class frm_ThemNCC : Form
     {
-        public frm_NhatKyHeThong()
+        public frm_ThemNCC()
         {
             InitializeComponent();
         }

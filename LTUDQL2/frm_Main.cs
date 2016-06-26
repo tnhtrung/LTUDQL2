@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
+using LTUDQL2.GUI.DanhMuc;
 
 namespace LTUDQL2
 {
@@ -25,7 +26,9 @@ namespace LTUDQL2
 
         private void ribbon_Click(object sender, EventArgs e)
         {
-
+            frm_KhachHangDM f = new frm_KhachHangDM();
+            f.MdiParent = this;
+            f.Show();
         }
 
         private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
@@ -73,6 +76,20 @@ namespace LTUDQL2
         private void barButtonItem36_ItemClick(object sender, ItemClickEventArgs e)
         {
 
+        }
+
+        private void barButtonItem27_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_HangHoa f = new frm_HangHoa();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void barButtonItem22_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frm_KhachHangDM f = new frm_KhachHangDM();
+            f.MdiParent = this;
+            f.Show();
         }
     }
 }

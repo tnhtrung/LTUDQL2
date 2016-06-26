@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LTUDQL2.GUI
+namespace LTUDQL2.GUI.DanhMuc
 {
-    public partial class frm_PhucHoi : Form
+    public partial class frm_HangHoa : Form
     {
-        public frm_PhucHoi()
+        public frm_HangHoa()
         {
             InitializeComponent();
         }
