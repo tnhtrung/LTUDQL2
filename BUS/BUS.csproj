@@ -51,7 +51,10 @@
   <ItemGroup>
     <Compile Include="HangHoaBL.cs" />
     <Compile Include="KhachHangBL.cs" />
+    <Compile Include="KhoHangBL.cs" />
+    <Compile Include="KhuVucBL.cs" />
     <Compile Include="NhaCungCapBL.cs" />
+    <Compile Include="NhanVienBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

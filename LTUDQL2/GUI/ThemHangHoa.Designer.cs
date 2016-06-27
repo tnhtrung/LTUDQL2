@@ -34,9 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtck = new DevExpress.XtraEditors.TextEdit();
             this.txtgia = new DevExpress.XtraEditors.TextEdit();
             this.txtdg = new DevExpress.XtraEditors.TextEdit();
             this.txtsl = new DevExpress.XtraEditors.TextEdit();
@@ -44,13 +42,12 @@
             this.txtma = new DevExpress.XtraEditors.TextEdit();
             this.cbncc = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label7 = new System.Windows.Forms.Label();
-            this.cbkho = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label6 = new System.Windows.Forms.Label();
             this.btnluu = new DevExpress.XtraEditors.SimpleButton();
             this.btndong = new DevExpress.XtraEditors.SimpleButton();
+            this.cbkho = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtck.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtgia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtdg.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsl.Properties)).BeginInit();
@@ -105,18 +102,9 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Giá";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(213, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Chiết khấu";
-            // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.txtck);
+            this.groupControl1.Controls.Add(this.cbkho);
             this.groupControl1.Controls.Add(this.txtgia);
             this.groupControl1.Controls.Add(this.txtdg);
             this.groupControl1.Controls.Add(this.txtsl);
@@ -124,9 +112,7 @@
             this.groupControl1.Controls.Add(this.txtma);
             this.groupControl1.Controls.Add(this.cbncc);
             this.groupControl1.Controls.Add(this.label7);
-            this.groupControl1.Controls.Add(this.cbkho);
             this.groupControl1.Controls.Add(this.label6);
-            this.groupControl1.Controls.Add(this.label5);
             this.groupControl1.Controls.Add(this.label4);
             this.groupControl1.Controls.Add(this.label3);
             this.groupControl1.Controls.Add(this.label1);
@@ -137,13 +123,6 @@
             this.groupControl1.Size = new System.Drawing.Size(453, 205);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
-            // 
-            // txtck
-            // 
-            this.txtck.Location = new System.Drawing.Point(270, 67);
-            this.txtck.Name = "txtck";
-            this.txtck.Size = new System.Drawing.Size(124, 20);
-            this.txtck.TabIndex = 21;
             // 
             // txtgia
             // 
@@ -182,10 +161,14 @@
             // 
             // cbncc
             // 
-            this.cbncc.Location = new System.Drawing.Point(270, 153);
+            this.cbncc.Location = new System.Drawing.Point(270, 120);
             this.cbncc.Name = "cbncc";
             this.cbncc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbncc.Properties.Items.AddRange(new object[] {
+            "NCC111",
+            "NCC112",
+            "NCC113"});
             this.cbncc.Size = new System.Drawing.Size(124, 20);
             this.cbncc.TabIndex = 15;
             this.cbncc.SelectedIndexChanged += new System.EventHandler(this.cbncc_SelectedIndexChanged);
@@ -193,26 +176,16 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(216, 160);
+            this.label7.Location = new System.Drawing.Point(219, 123);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(28, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "NCC";
             // 
-            // cbkho
-            // 
-            this.cbkho.Location = new System.Drawing.Point(270, 109);
-            this.cbkho.Name = "cbkho";
-            this.cbkho.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbkho.Size = new System.Drawing.Size(124, 20);
-            this.cbkho.TabIndex = 13;
-            this.cbkho.SelectedIndexChanged += new System.EventHandler(this.cbkho_SelectedIndexChanged);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(213, 111);
+            this.label6.Location = new System.Drawing.Point(219, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 13);
             this.label6.TabIndex = 12;
@@ -236,6 +209,19 @@
             this.btndong.Size = new System.Drawing.Size(75, 23);
             this.btndong.TabIndex = 2;
             this.btndong.Text = "Đóng";
+            this.btndong.Click += new System.EventHandler(this.btndong_Click);
+            // 
+            // cbkho
+            // 
+            this.cbkho.Location = new System.Drawing.Point(270, 75);
+            this.cbkho.Name = "cbkho";
+            this.cbkho.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbkho.Properties.Items.AddRange(new object[] {
+            "KH01",
+            "KH02"});
+            this.cbkho.Size = new System.Drawing.Size(124, 20);
+            this.cbkho.TabIndex = 22;
             // 
             // ThemHangHoa
             // 
@@ -251,7 +237,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtck.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtgia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtdg.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsl.Properties)).EndInit();
@@ -270,19 +255,17 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.ComboBoxEdit cbncc;
         private System.Windows.Forms.Label label7;
-        private DevExpress.XtraEditors.ComboBoxEdit cbkho;
         private System.Windows.Forms.Label label6;
         private DevExpress.XtraEditors.SimpleButton btnluu;
         private DevExpress.XtraEditors.SimpleButton btndong;
         private DevExpress.XtraEditors.TextEdit txtma;
-        private DevExpress.XtraEditors.TextEdit txtck;
         private DevExpress.XtraEditors.TextEdit txtgia;
         private DevExpress.XtraEditors.TextEdit txtdg;
         private DevExpress.XtraEditors.TextEdit txtsl;
         private DevExpress.XtraEditors.TextEdit txtten;
+        private DevExpress.XtraEditors.ComboBoxEdit cbkho;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace LTUDQL2.GUI.DanhMuc
 {
     public partial class frm_NhanVien : Form
     {
+        NhanVienBL g = new NhanVienBL();
         public frm_NhanVien()
         {
             InitializeComponent();
+        }
+
+        private void frm_NhanVien_Load(object sender, EventArgs e)
+        {
+            var l = g.DanhSach();
+            gcnv.DataSource = l;
+
         }
     }
 }

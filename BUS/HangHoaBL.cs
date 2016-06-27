@@ -43,14 +43,10 @@ namespace BUS
             using (LTUDQLEntities ctx = new LTUDQLEntities())
             {
 
-                SanPham n=new SanPham {
-                    SanPhamID=sp.SanPhamID,
+                SanPham n = new SanPham {
+                    SanPhamID = sp.SanPhamID,
                     TenSanPham = sp.TenSanPham,
-                    SoLuong = sp.SoLuong,
-                    Gia = sp.Gia,
-                    ChietKhau = sp.ChietKhau,
-                    MaKhoHang = sp.MaKhoHang,
-                
+                    
                 };
 
                 ctx.SanPham.Add(n);

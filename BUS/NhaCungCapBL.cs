@@ -18,6 +18,14 @@ namespace BUS
                           select new NhaCungCapDTO
                           {
                               MaNCC = n.MaNCC,
+                              TenNhaCungCap=n.TenNhaCungCap,
+                              Fax=n.Fax,
+                              DiaChi=n.DiaChi,
+                              SDT=n.SDT,
+                              Email=n.Email,
+                              TenNganHang=n.TenNganHang,
+                              MaThue=n.MaThue,
+
                           }
                         ).ToList();
                 return ds;

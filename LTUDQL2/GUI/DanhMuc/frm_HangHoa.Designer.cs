@@ -251,6 +251,7 @@
             this.toolStripButton5.Size = new System.Drawing.Size(56, 22);
             this.toolStripButton5.Text = "Đóng";
             this.toolStripButton5.ToolTipText = "Xóa";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // documentManager1
             // 

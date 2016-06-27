@@ -36,12 +36,12 @@
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dck_khuvuc = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gckv = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.cl_khuvuc = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_ten = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_ghichu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_quanli = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaKV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenKV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NguoiQL = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Ghichu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btn_them = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -55,7 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dck_khuvuc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gckv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
@@ -108,62 +108,66 @@
             // 
             // dck_khuvuc
             // 
-            this.dck_khuvuc.Controls.Add(this.gridControl1);
+            this.dck_khuvuc.Controls.Add(this.gckv);
             this.dck_khuvuc.Controls.Add(this.toolStrip1);
             this.dck_khuvuc.Location = new System.Drawing.Point(0, 0);
             this.dck_khuvuc.Name = "dck_khuvuc";
             this.dck_khuvuc.Size = new System.Drawing.Size(657, 233);
             this.dck_khuvuc.TabIndex = 0;
             // 
-            // gridControl1
+            // gckv
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 25);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(657, 208);
-            this.gridControl1.TabIndex = 2;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gckv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gckv.Location = new System.Drawing.Point(0, 25);
+            this.gckv.MainView = this.gridView1;
+            this.gckv.Name = "gckv";
+            this.gckv.Size = new System.Drawing.Size(657, 208);
+            this.gckv.TabIndex = 2;
+            this.gckv.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.cl_khuvuc,
-            this.cl_ten,
-            this.cl_ghichu,
-            this.cl_quanli});
-            this.gridView1.GridControl = this.gridControl1;
+            this.MaKV,
+            this.TenKV,
+            this.NguoiQL,
+            this.Ghichu});
+            this.gridView1.GridControl = this.gckv;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // cl_khuvuc
+            // MaKV
             // 
-            this.cl_khuvuc.FieldName = "Mã";
-            this.cl_khuvuc.Name = "cl_khuvuc";
-            this.cl_khuvuc.Visible = true;
-            this.cl_khuvuc.VisibleIndex = 0;
+            this.MaKV.Caption = "Mã";
+            this.MaKV.FieldName = "MaKV";
+            this.MaKV.Name = "MaKV";
+            this.MaKV.Visible = true;
+            this.MaKV.VisibleIndex = 0;
             // 
-            // cl_ten
+            // TenKV
             // 
-            this.cl_ten.FieldName = "Tên";
-            this.cl_ten.Name = "cl_ten";
-            this.cl_ten.Visible = true;
-            this.cl_ten.VisibleIndex = 1;
+            this.TenKV.Caption = "Tên";
+            this.TenKV.FieldName = "TenKV";
+            this.TenKV.Name = "TenKV";
+            this.TenKV.Visible = true;
+            this.TenKV.VisibleIndex = 1;
             // 
-            // cl_ghichu
+            // NguoiQL
             // 
-            this.cl_ghichu.FieldName = "Ghi chú";
-            this.cl_ghichu.Name = "cl_ghichu";
-            this.cl_ghichu.Visible = true;
-            this.cl_ghichu.VisibleIndex = 2;
+            this.NguoiQL.Caption = "Người quản lí";
+            this.NguoiQL.FieldName = "NguoiQL";
+            this.NguoiQL.Name = "NguoiQL";
+            this.NguoiQL.Visible = true;
+            this.NguoiQL.VisibleIndex = 2;
             // 
-            // cl_quanli
+            // Ghichu
             // 
-            this.cl_quanli.FieldName = "Quản lí";
-            this.cl_quanli.Name = "cl_quanli";
-            this.cl_quanli.Visible = true;
-            this.cl_quanli.VisibleIndex = 3;
+            this.Ghichu.Caption = "Ghi chú";
+            this.Ghichu.FieldName = "Ghichu";
+            this.Ghichu.Name = "Ghichu";
+            this.Ghichu.Visible = true;
+            this.Ghichu.VisibleIndex = 3;
             // 
             // toolStrip1
             // 
@@ -238,13 +242,14 @@
             this.Name = "frm_KhuVuc";
             this.Text = "Khu vực";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_KhuVuc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.document1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.dockPanel1.ResumeLayout(false);
             this.dck_khuvuc.ResumeLayout(false);
             this.dck_khuvuc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gckv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -263,12 +268,12 @@
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup documentGroup1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.Document document1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gckv;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn cl_khuvuc;
-        private DevExpress.XtraGrid.Columns.GridColumn cl_ten;
-        private DevExpress.XtraGrid.Columns.GridColumn cl_ghichu;
-        private DevExpress.XtraGrid.Columns.GridColumn cl_quanli;
+        private DevExpress.XtraGrid.Columns.GridColumn MaKV;
+        private DevExpress.XtraGrid.Columns.GridColumn TenKV;
+        private DevExpress.XtraGrid.Columns.GridColumn NguoiQL;
+        private DevExpress.XtraGrid.Columns.GridColumn Ghichu;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btn_them;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;

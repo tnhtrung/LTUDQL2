@@ -36,5 +36,10 @@ namespace LTUDQL2.GUI.DanhMuc
             ThemHangHoa f = new ThemHangHoa();
             f.ShowDialog();
         }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

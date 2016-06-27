@@ -36,13 +36,13 @@
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gckh = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.cl_makho = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_tenkho = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaKhoHang = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Ten = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Fax = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NguoiQL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btn_them = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -51,12 +51,13 @@
             this.btn_xoa = new System.Windows.Forms.ToolStripButton();
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.KyHieu = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.document1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gckh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
@@ -109,70 +110,76 @@
             // 
             // dockPanel1_Container
             // 
-            this.dockPanel1_Container.Controls.Add(this.gridControl1);
+            this.dockPanel1_Container.Controls.Add(this.gckh);
             this.dockPanel1_Container.Controls.Add(this.toolStrip1);
             this.dockPanel1_Container.Location = new System.Drawing.Point(0, 0);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
             this.dockPanel1_Container.Size = new System.Drawing.Size(798, 233);
             this.dockPanel1_Container.TabIndex = 0;
             // 
-            // gridControl1
+            // gckh
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 25);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(798, 208);
-            this.gridControl1.TabIndex = 4;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gckh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gckh.Location = new System.Drawing.Point(0, 25);
+            this.gckh.MainView = this.gridView1;
+            this.gckh.Name = "gckh";
+            this.gckh.Size = new System.Drawing.Size(798, 208);
+            this.gckh.TabIndex = 4;
+            this.gckh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.cl_makho,
-            this.cl_tenkho,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5});
-            this.gridView1.GridControl = this.gridControl1;
+            this.MaKhoHang,
+            this.Ten,
+            this.DiaChi,
+            this.Fax,
+            this.NguoiQL,
+            this.KyHieu});
+            this.gridView1.GridControl = this.gckh;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // cl_makho
+            // MaKhoHang
             // 
-            this.cl_makho.FieldName = "Mã";
-            this.cl_makho.Name = "cl_makho";
-            this.cl_makho.Visible = true;
-            this.cl_makho.VisibleIndex = 0;
+            this.MaKhoHang.Caption = "MÃ";
+            this.MaKhoHang.FieldName = "MaKhoHang";
+            this.MaKhoHang.Name = "MaKhoHang";
+            this.MaKhoHang.Visible = true;
+            this.MaKhoHang.VisibleIndex = 0;
             // 
-            // cl_tenkho
+            // Ten
             // 
-            this.cl_tenkho.FieldName = "Tên";
-            this.cl_tenkho.Name = "cl_tenkho";
-            this.cl_tenkho.Visible = true;
-            this.cl_tenkho.VisibleIndex = 1;
+            this.Ten.Caption = "Tên";
+            this.Ten.FieldName = "Ten";
+            this.Ten.Name = "Ten";
+            this.Ten.Visible = true;
+            this.Ten.VisibleIndex = 1;
             // 
-            // gridColumn3
+            // DiaChi
             // 
-            this.gridColumn3.FieldName = "Liên hệ";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.DiaChi.Caption = "Địa chỉ";
+            this.DiaChi.FieldName = "DiaChi";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Visible = true;
+            this.DiaChi.VisibleIndex = 2;
             // 
-            // gridColumn4
+            // Fax
             // 
-            this.gridColumn4.FieldName = "Địa chỉ";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.Fax.Caption = "Fax";
+            this.Fax.FieldName = "Fax";
+            this.Fax.Name = "Fax";
+            this.Fax.Visible = true;
+            this.Fax.VisibleIndex = 3;
             // 
-            // gridColumn5
+            // NguoiQL
             // 
-            this.gridColumn5.FieldName = "Ký hiệu";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.NguoiQL.Caption = "Người quản lí";
+            this.NguoiQL.FieldName = "NguoiQL";
+            this.NguoiQL.Name = "NguoiQL";
+            this.NguoiQL.Visible = true;
+            this.NguoiQL.VisibleIndex = 4;
             // 
             // toolStrip1
             // 
@@ -239,6 +246,14 @@
             this.tabbedView1.RootContainer.Nodes.AddRange(new DevExpress.XtraBars.Docking2010.Views.Tabbed.DockingContainer[] {
             dockingContainer1});
             // 
+            // KyHieu
+            // 
+            this.KyHieu.Caption = "Ky hiệu";
+            this.KyHieu.FieldName = "KyHieu";
+            this.KyHieu.Name = "KyHieu";
+            this.KyHieu.Visible = true;
+            this.KyHieu.VisibleIndex = 5;
+            // 
             // frm_KhoHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,13 +262,14 @@
             this.Name = "frm_KhoHang";
             this.Text = "Kho hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_KhoHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.documentGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.document1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.dockPanel1.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);
             this.dockPanel1_Container.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gckh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -272,18 +288,19 @@
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.DocumentGroup documentGroup1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.Document document1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gckh;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn cl_makho;
-        private DevExpress.XtraGrid.Columns.GridColumn cl_tenkho;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn MaKhoHang;
+        private DevExpress.XtraGrid.Columns.GridColumn Ten;
+        private DevExpress.XtraGrid.Columns.GridColumn DiaChi;
+        private DevExpress.XtraGrid.Columns.GridColumn Fax;
+        private DevExpress.XtraGrid.Columns.GridColumn NguoiQL;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btn_them;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton btn_sua;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton btn_xoa;
+        private DevExpress.XtraGrid.Columns.GridColumn KyHieu;
     }
 }

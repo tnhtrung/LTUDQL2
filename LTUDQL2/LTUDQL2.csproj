@@ -68,10 +68,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_Main.cs">
+    <Compile Include="GUI\DanhMuc\frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Main.Designer.cs">
+    <Compile Include="GUI\DanhMuc\frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ChucNang\frm_BanHang.cs">
@@ -218,9 +218,14 @@
     <Compile Include="GUI\ThemHangHoa.Designer.cs">
       <DependentUpon>ThemHangHoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="LTUDQLDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LTUDQLDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_Main.resx">
+    <EmbeddedResource Include="GUI\DanhMuc\frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ChucNang\frm_BanHang.resx">
@@ -302,6 +307,17 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="LTUDQLDataSet.xsc">
+      <DependentUpon>LTUDQLDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LTUDQLDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LTUDQLDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LTUDQLDataSet.xss">
+      <DependentUpon>LTUDQLDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
