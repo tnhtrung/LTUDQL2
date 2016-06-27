@@ -56,6 +56,7 @@
     <Compile Include="NhaCungCapBL.cs" />
     <Compile Include="NhanVienBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPhamBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">
